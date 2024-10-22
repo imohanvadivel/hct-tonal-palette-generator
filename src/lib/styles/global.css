@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./type.css);
+@import url(./colors.css);
+@import url(./variables.css);
+@import url(./mediaQueries.css);
+
+html {
+	font-family: var(--sans-font-stack);
+	font-size: var(--font-size-small);
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	line-height: 1.5;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+a {
+	text-decoration: underline;
+	color: var(--color-text);
+	text-underline-position: from-font;
+	text-underline-thickness: 0.0625rem;
+	text-decoration-color: var(--color-border-strong);
+	white-space: nowrap;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--color-bg-brand);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
