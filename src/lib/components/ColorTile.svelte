@@ -14,7 +14,7 @@
 	<div class="tile" class:white={hex === '#FFFFFF'} style="background-color: {hex};"></div>
 
 	<div class="info">
-		<div class="name">{name} – {hct.t}</div>
+		<div class="name"><span>{name}</span> – {hct.t}</div>
 		<div class="color">
 			<span class="hct">
 				<span>{hct.h}</span> <span>{hct.c}</span> <span>{hct.t}</span>
@@ -56,6 +56,14 @@
 		font-size: 0.875rem;
 		line-height: 1.5rem;
 		user-select: none;
+		display: flex;
+	}
+	.name span {
+		max-width: 13rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
 	}
 	.hct {
 		width: 5.25rem;

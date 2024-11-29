@@ -38,6 +38,14 @@
 		</li>
 	</ul>
 
+	<p class="passage outlink">
+		Check out the article <a
+			href="https://mohanvadivel.com/thoughts/building-accessible-color-system"
+			>Building an Accessible Color System</a
+		> to learn more about creating and refining color palettes, and building an accessible color
+		system out of it.
+	</p>
+
 	<h2>About HCT:</h2>
 
 	<p class="passage">
@@ -105,6 +113,10 @@
 		font-size: 0.875rem;
 		line-height: 1.5;
 		padding-bottom: 0.5rem;
+	}
+
+	ul li:last-child {
+		padding-bottom: 0;
 	}
 
 	ul {
@@ -195,5 +207,9 @@
 		background-color: var(--color-bg);
 		border: none;
 		padding: 0;
+	}
+
+	.outlink a {
+		white-space: normal;
 	}
 </style>

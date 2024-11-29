@@ -10,7 +10,7 @@
 </script>
 
 <header>
-	<span>{name}</span>
+	<span class="name">{name}</span>
 	<div class="right-part">
 		<button onclick={handleCSSDownload}>
 			{@html Download} CSS
@@ -34,6 +34,13 @@
 		text-transform: uppercase;
 		letter-spacing: 0.125em;
 		font-size: 0.8125rem;
+	}
+
+	.name {
+		max-width: 12rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	button {

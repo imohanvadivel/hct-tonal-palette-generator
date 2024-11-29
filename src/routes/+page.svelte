@@ -14,6 +14,10 @@
 	let colors = [color2, color3, color4, color5];
 </script>
 
+<svelte:head>
+	<title>HCT Tonal Palette</title>
+</svelte:head>
+
 <section>
 	<ColorCard color={color1} nonDismissible />
 
